@@ -244,11 +244,6 @@ public class Patch {
                     return false;
                 }
 
-                if (ConfigHandler.EDITION_BRANCH.contains("-dev")) {
-                    Chat.sendConsoleMessage("§e[CoreProtect] " + Phrase.build(Phrase.DEVELOPMENT_BRANCH));
-                    return true;
-                }
-
                 ConfigHandler.converterRunning = true;
                 Consumer.isPaused = true;
                 final Integer[] oldVersion = lastVersion;
